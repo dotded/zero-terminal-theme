@@ -1,0 +1,17 @@
+[general]
+bars = 0
+bar_width = 3
+bar_spacing = 1
+framerate = 60
+sensitivity = 100
+autosens = 1
+
+[color]
+background = default
+foreground = '#858C58'
+gradient = 0
+
+[smoothing]
+noise_reduction = 77
+monstercat = 1
+waves = 0

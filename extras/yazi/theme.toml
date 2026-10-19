@@ -1,0 +1,77 @@
+# Custom Yazi theme
+[mgr]
+cwd = { fg = "#CBC190", bold = true }
+find_keyword = { fg = "#030202", bg = "#CBC190", bold = true }
+find_position = { fg = "#B0BEB0", italic = true }
+symlink_target = { fg = "#839388" }
+marker_copied = { fg = "#858C58", bg = "#858C58" }
+marker_cut = { fg = "#C46245", bg = "#C46245" }
+marker_marked = { fg = "#CBC190", bg = "#CBC190" }
+marker_selected = { fg = "#A9AC6B", bg = "#A9AC6B" }
+border_symbol = "│"
+border_style = { fg = "#49423C" }
+
+[tabs]
+active = { fg = "#030202", bg = "#A9AC6B", bold = true }
+inactive = { fg = "#DCD2A4", bg = "#201B1D" }
+
+[mode]
+normal_main = { fg = "#030202", bg = "#A9AC6B", bold = true }
+normal_alt = { fg = "#DCD2A4", bg = "#49423C" }
+select_main = { fg = "#030202", bg = "#839388", bold = true }
+select_alt = { fg = "#DCD2A4", bg = "#49423C" }
+unset_main = { fg = "#030202", bg = "#C46245", bold = true }
+unset_alt = { fg = "#DCD2A4", bg = "#49423C" }
+
+[status]
+overall = { fg = "#DCD2A4" }
+perm_type = { fg = "#CBC190" }
+perm_read = { fg = "#858C58" }
+perm_write = { fg = "#C46245" }
+perm_exec = { fg = "#839388" }
+perm_sep = { fg = "#49423C" }
+progress_label = { fg = "#DCD2A4", bold = true }
+progress_normal = { fg = "#858C58", bg = "#201B1D" }
+progress_error = { fg = "#C46245", bg = "#201B1D" }
+
+[which]
+border = { fg = "#858C58" }
+cand = { fg = "#CBC190", bold = true }
+desc = { fg = "#DCD2A4" }
+
+[confirm]
+border = { fg = "#858C58" }
+title = { fg = "#CBC190", bold = true }
+body = { fg = "#DCD2A4" }
+btn_yes = { fg = "#030202", bg = "#858C58" }
+btn_no = { fg = "#DCD2A4", bg = "#49423C" }
+
+[input]
+border = { fg = "#858C58" }
+title = { fg = "#CBC190", bold = true }
+value = { fg = "#DCD2A4" }
+selected = { fg = "#030202", bg = "#A9AC6B" }
+
+[help]
+border = { fg = "#858C58" }
+chord = { fg = "#CBC190", bold = true }
+action = { fg = "#DCD2A4" }
+hovered = { fg = "#030202", bg = "#858C58" }
+
+[filetype]
+rules = [
+  { mime = "image/*", fg = "#CBC190" },
+  { mime = "{audio,video}/*", fg = "#AD8D83" },
+  { mime = "application/{zip,gzip,x-tar,x-7z-compressed}", fg = "#C46245" },
+  { url = "*/", fg = "#A9AC6B", bold = true },
+  { url = "*", fg = "#DCD2A4" },
+]
+
+[icon]
+prepend_globs = [
+    { url = "**/", text = "", fg = "#C46245" },
+]
+
+prepend_conds = [
+    { if = "dir", text = "", fg = "#C46245" },
+]

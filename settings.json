@@ -1,0 +1,109 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [
+        {
+            "command": {
+                "action": "splitPane",
+                "commandline": "cmd.exe /d /c \"set WT_NO_FASTFETCH=1&& powershell.exe -NoLogo\"",
+                "split": "right"
+            },
+            "id": "User.SplitNoFastfetchVertical"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "commandline": "cmd.exe /d /c \"set WT_NO_FASTFETCH=1&& powershell.exe -NoLogo\"",
+                "split": "down"
+            },
+            "id": "User.SplitNoFastfetchHorizontal"
+        },
+        {
+            "command": "restartConnection",
+            "id": "User.RestartConnection"
+        }
+    ],
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "initialCols": 135,
+    "initialRows": 30,
+    "keybindings": [
+        {
+            "id": "Terminal.ToggleFocusMode",
+            "keys": "ctrl+alt+f"
+        },
+        {
+            "id": "User.SplitNoFastfetchVertical",
+            "keys": "alt+shift+minus"
+        },
+        {
+            "id": "User.SplitNoFastfetchHorizontal",
+            "keys": "alt+shift+plus"
+        },
+        {
+            "id": "User.RestartConnection",
+            "keys": "ctrl+alt+r"
+        }
+    ],
+    "launchMode": "focus",
+    "newTabMenu": [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": {
+        "defaults": {
+            "colorScheme": "Forgotten Knight",
+            "opacity": 90,
+            "useAcrylic": true
+        },
+        "list": [
+            {
+                "colorScheme": "Forgotten Knight",
+                "commandline": "powershell.exe -NoLogo",
+                "font": {
+                    "face": "JetBrainsMonoNL Nerd Font",
+                    "size": 10
+                },
+                "foreground": null,
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "icon": "",
+                "name": "Windows PowerShell",
+                "tabTitle": "###"
+            },
+            {
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            }
+        ]
+    },
+    "schemes": [
+        {
+            "background": "#030202",
+            "black": "#201B1D",
+            "blue": "#626C62",
+            "brightBlack": "#49423C",
+            "brightBlue": "#98A69A",
+            "brightCyan": "#B0BEB0",
+            "brightGreen": "#858C58",
+            "brightPurple": "#AD8D83",
+            "brightRed": "#C46245",
+            "brightWhite": "#FFFFF8",
+            "brightYellow": "#CBC190",
+            "cursorColor": "#FFFFF8",
+            "cyan": "#839388",
+            "foreground": "#DCD2A4",
+            "green": "#545635",
+            "name": "Forgotten Knight",
+            "purple": "#77645E",
+            "red": "#8C4430",
+            "selectionBackground": "#545635",
+            "white": "#DCD2A4",
+            "yellow": "#A9AC6B"
+        }
+    ],
+    "tabWidthMode": "compact",
+    "themes": [],
+    "useAcrylicInTabRow": true
+}
